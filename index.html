@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>body{
+text-align:center;
+background-image:url(https://thecomputerpotato.com/thecomputerpotato/wp-content/uploads/2015/10/3051235-poster-p-1-casios-latest-calculator-is-the-best-designed-number-cruncher-since-dieter-rams-1038x576.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+}
+button{
+background-color:lightskyblue;
+}
+#result{
+color:white;
+}
+</style>
+</head>
+<body>
+<h2>Round OFF Calculator</h2>
+<h3>INPUT THE NUMBER</h3>
+<label>Enter a value:</label>
+<input type="number" id="num">
+<button onclick="submit()">Round Off</button>
+<p id="result"></p>
+<script>
+    function submit(){
+        var a=document.getElementById("num").value
+        var b=Math.round(a);
+        document.getElementById("result").innerHTML=b;
+    }
+</script>
+
+
+</body>
+</html>
